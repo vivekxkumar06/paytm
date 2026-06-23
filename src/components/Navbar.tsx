@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ChevronDown, Download, User } from "lucide-react";
-import Menusection from "./Menusection";
+import MenuSection from "./MenuSection";
+
 
 export default function Navbar() {
   return (
@@ -16,7 +17,7 @@ export default function Navbar() {
           />
         </div>
 
-      <Menusection/>
+      <MenuSection/>
 
         {/* Right Side */}
         <div className="flex items-center gap-8">

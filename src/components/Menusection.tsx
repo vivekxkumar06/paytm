@@ -1,7 +1,7 @@
 
 import Link from "next/link"
 import { ChevronDown } from "lucide-react"
-function Menusection() {
+function MenuSection() {
   return (
     <div>
          {/* Menu */}
@@ -50,4 +50,4 @@ function Menusection() {
   )
 }
 
-export default Menusection
+export default MenuSection
