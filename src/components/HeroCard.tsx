@@ -10,7 +10,6 @@ import {
 
 const services = [
   {
-    
     icon: Smartphone,
     title: "Mobile Recharge",
     href: "/mobile-recharge",
@@ -45,45 +44,42 @@ const services = [
 
 function HeroCard() {
   return (
-    <div>
-         {/* Left Section */}
-        <div className="flex-1 bg-white rounded-3xl p-8">
-          <h2 className="text-2xl font-bold mb-8">
-            Recharges & Bill Payments
-          </h2>
+    <div className="flex-1 bg-white rounded-3xl p-5 sm:p-8">
+      <h2 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8">
+        Recharges & Bill Payments
+      </h2>
 
-          <div className="grid grid-cols-6 gap-4">
-            {services.map((item, index) => {
-              const Icon = item.icon;
+      {/* 3 cols on mobile, 6 on desktop */}
+      <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
+        {services.map((item, index) => {
+          const Icon = item.icon;
 
-              return (
-                <Link
-                  key={index}
-                  href={item.href}
-                  className={`flex flex-col items-center justify-center text-center rounded-2xl p-6 min-h-[180px] transition-all duration-300
-                    ${
-                      item.active
-                        ? "bg-[#f7f9fc]"
-                        : "hover:bg-[#f7f9fc]"
-                    }`}
-                >
-                  <Icon
-                    size={42}
-                    strokeWidth={1.7}
-                    className="text-[#0b66c3] mb-5"
-                  />
-                  
+          return (
+            <Link
+              key={index}
+              href={item.href}
+              className={`flex flex-col items-center justify-center text-center rounded-2xl p-3 sm:p-6 min-h-[100px] sm:min-h-[160px] lg:min-h-[180px] transition-all duration-300
+                ${
+                  item.active
+                    ? "bg-[#f7f9fc]"
+                    : "hover:bg-[#f7f9fc]"
+                }`}
+            >
+              <Icon
+                size={28}
+                strokeWidth={1.7}
+                className="text-[#0b66c3] mb-3 sm:mb-5 sm:w-10 sm:h-10"
+              />
 
-                  <span className="text-[18px] font-medium leading-7">
-                    {item.title}
-                  </span>
-                </Link>
-              );
-            })}
-          </div>
-        </div>
+              <span className="text-[13px] sm:text-[16px] lg:text-[18px] font-medium leading-snug">
+                {item.title}
+              </span>
+            </Link>
+          );
+        })}
+      </div>
     </div>
-  )
+  );
 }
 
-export default HeroCard
+export default HeroCard;

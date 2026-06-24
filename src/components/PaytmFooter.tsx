@@ -15,9 +15,10 @@ interface FooterSection {
   richContent?: boolean;
   companyContent?: boolean;
   careerLink?: string;
+  investorContent?: boolean;
 }
 
-// ─── Rich "More about Paytm" Content ─────────────────────────────────────────
+// ─── Investor Relations Content ───────────────────────────────────────────────
 function MoreAboutPaytmContent() {
   return (
     <div className="pb-6 pl-9 pr-4 text-sm text-gray-600 leading-relaxed space-y-5">
@@ -238,13 +239,8 @@ const footerSections: FooterSection[] = [
   {
     title: "Investor Relations",
     expandable: true,
-    items: [
-      { label: "Annual Reports", href: "#" },
-      { label: "Financial Results", href: "#" },
-      { label: "Corporate Governance", href: "#" },
-      { label: "Shareholder Information", href: "#" },
-      { label: "Stock Exchange Filings", href: "#" },
-    ],
+    investorContent: true,
+    items: [],
   },
   {
     title: "More about Paytm",
@@ -433,6 +429,50 @@ const InstagramIcon = () => (
   </svg>
 );
 
+// ─── Investor Relations Content ───────────────────────────────────────────────
+function InvestorRelationsContent() {
+  const topLinks = [
+    { label: "Home", href: "#" },
+    { label: "Financials", href: "#" },
+    { label: "Filings & Press Releases", href: "#" },
+    { label: "News & Events", href: "#" },
+    { label: "Corporate Governance", href: "#" },
+    { label: "Resources", href: "#" },
+  ];
+  const boxLinks = [
+    { label: "Investor Relations Contacts", href: "#" },
+    { label: "Frequently Asked Questions", href: "#" },
+  ];
+  return (
+    <div className="pb-6 pl-9 pr-4 space-y-5">
+      {/* 6-column top links */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-x-4 gap-y-4">
+        {topLinks.map((item) => (
+          <a
+            key={item.label}
+            href={item.href}
+            className="text-sm text-gray-500 hover:text-blue-600 transition-colors duration-150"
+          >
+            {item.label}
+          </a>
+        ))}
+      </div>
+      {/* Bordered box with bold links */}
+      <div className="border border-gray-200 rounded-xl px-6 py-5 flex flex-wrap gap-x-16 gap-y-3">
+        {boxLinks.map((item) => (
+          <a
+            key={item.label}
+            href={item.href}
+            className="text-sm font-bold text-gray-700 hover:text-blue-600 transition-colors duration-150"
+          >
+            {item.label}
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 // ─── Accordion Row ────────────────────────────────────────────────────────────
 function AccordionRow({
   section,
@@ -493,7 +533,9 @@ function AccordionRow({
           transition: "max-height 0.4s ease",
         }}
       >
-        {section.richContent ? (
+        {section.investorContent ? (
+          <InvestorRelationsContent />
+        ) : section.richContent ? (
           <MoreAboutPaytmContent />
         ) : section.companyContent ? (
           <div className="pb-6 pl-9 pr-4">

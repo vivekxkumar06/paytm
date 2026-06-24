@@ -17,55 +17,45 @@ export default function BoxSection3() {
 
         <div className="relative z-10 mx-auto max-w-[1400px] px-6 md:px-12 lg:px-20">
 
-          <div className="grid min-h-[850px] items-center gap-4 lg:grid-cols-[1fr_0.9fr]">
+          <div className="grid items-center gap-8 py-12 lg:py-0 lg:min-h-[850px] lg:grid-cols-[1fr_0.9fr]">
 
             {/* LEFT CONTENT */}
-            <div className="max-w-[580px] py-16">
+            <div className="max-w-[580px]">
 
               <Image
                 src="/images/hero6.png"
-                alt="Paytm Money"
+                alt="Paytm Business"
                 width={170}
                 height={50}
-                className="mb-8"
+                className="mb-6 sm:mb-8 w-[120px] sm:w-[170px]"
               />
 
-              <h2 className="text-[30px] md:text-[44px] lg:text-[56px] font-bold leading-[1.05] tracking-[-2px] text-black">
-            Accept payments<br/>
-            <span className="text-blue-600">
-                 online & offline
-            </span>
-            
+              <h2 className="text-[24px] sm:text-[36px] lg:text-[56px] font-bold leading-[1.05] tracking-[-1px] lg:tracking-[-2px] text-black">
+                Accept payments
+                <br />
+                <span className="text-blue-600">online & offline</span>
               </h2>
 
-             <p className="mt-5 max-w-[680px] text-[32px] md:text-[42px] lg:text-[28px] font-bold leading-[1.15] tracking-[-2px] text-[#111827]">
-  Millions of small & big businesses use Paytm to <br/>accept payments
-  
-  anywhere, anytime with  <br/> a wide range of solutions for all kinds of merchants.
-  </p>
-
-
-            
+              <p className="mt-4 sm:mt-5 max-w-[680px] text-[18px] sm:text-[24px] lg:text-[28px] font-bold leading-[1.15] tracking-[-1px] lg:tracking-[-2px] text-[#111827]">
+                Millions of small & big businesses use Paytm to accept payments
+                anywhere, anytime with a wide range of solutions for all kinds of merchants.
+              </p>
 
               <Link
                 href="/"
-                className="group mt-10 inline-flex items-center gap-3 rounded-full bg-[#002970] px-8 py-4 text-lg font-semibold text-white transition-all duration-300 hover:scale-105"
+                className="group mt-7 sm:mt-10 inline-flex items-center gap-3 rounded-full bg-[#002970] px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-white transition-all duration-300 hover:scale-105"
               >
                 Learn More
-
                 <ArrowRight
                   size={22}
                   className="transition-transform duration-300 group-hover:translate-x-1"
                 />
               </Link>
 
-            
             </div>
 
             {/* RIGHT CONTENT */}
-            <div className="relative min-h-[800px] flex items-center justify-end">
-
-              {/* Phone Image */}
+            <div className="hidden lg:flex relative min-h-[800px] items-center justify-end">
               <Image
                 src="/images/hero7.png"
                 alt="Phone"
@@ -83,9 +73,6 @@ export default function BoxSection3() {
                   object-contain
                 "
               />
-
-     
-
             </div>
 
           </div>

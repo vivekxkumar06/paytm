@@ -17,26 +17,26 @@ export default function BoxSection2() {
 
         <div className="relative z-10 mx-auto max-w-[1400px] px-6 md:px-12 lg:px-20">
 
-          <div className="grid min-h-[850px] items-center gap-4 lg:grid-cols-[1fr_0.9fr]">
+          <div className="grid items-center gap-8 py-12 lg:py-0 lg:min-h-[850px] lg:grid-cols-[1fr_0.9fr]">
 
             {/* LEFT CONTENT */}
-            <div className="max-w-[580px] py-16">
+            <div className="max-w-[580px]">
 
               <Image
                 src="/images/hero4.png"
                 alt="Paytm Money"
                 width={170}
                 height={50}
-                className="mb-8"
+                className="mb-6 sm:mb-8 w-[120px] sm:w-[170px]"
               />
 
-              <h2 className="text-[30px] md:text-[44px] lg:text-[56px] font-bold leading-[1.05] tracking-[-2px] text-black">
+              <h2 className="text-[24px] sm:text-[36px] lg:text-[56px] font-bold leading-[1.05] tracking-[-1px] lg:tracking-[-2px] text-black">
                 Switch to Paytm Money.
                 <br />
                 Pay Less, Trade More.
               </h2>
 
-              <h1 className="mt-5 text-[40px] md:text-[56px] lg:text-[68px] font-bold leading-[0.95] tracking-[-3px] text-[#00BAF2]">
+              <h1 className="mt-4 sm:mt-5 text-[32px] sm:text-[48px] lg:text-[68px] font-bold leading-[0.95] tracking-[-2px] lg:tracking-[-3px] text-[#00BAF2]">
                 Margin Trading
                 <br />
                 Facility (MTF) at
@@ -44,7 +44,7 @@ export default function BoxSection2() {
                 7.99%* p.a.
               </h1>
 
-              <p className="mt-8 max-w-[560px] text-[18px] leading-[1.5] text-[#101010]">
+              <p className="mt-5 sm:mt-8 max-w-[560px] text-[15px] sm:text-[18px] leading-[1.5] text-[#101010]">
                 Get up to 4X Buying Power on 1200+ Stocks at Low
                 Interest Rates with Margin Trading Facility by
                 Paytm Money.
@@ -52,17 +52,16 @@ export default function BoxSection2() {
 
               <Link
                 href="/"
-                className="group mt-10 inline-flex items-center gap-3 rounded-full bg-[#002970] px-8 py-4 text-lg font-semibold text-white transition-all duration-300 hover:scale-105"
+                className="group mt-7 sm:mt-10 inline-flex items-center gap-3 rounded-full bg-[#002970] px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-white transition-all duration-300 hover:scale-105"
               >
                 Invest With MTF
-
                 <ArrowRight
                   size={22}
                   className="transition-transform duration-300 group-hover:translate-x-1"
                 />
               </Link>
 
-              <p className="mt-10 max-w-[700px] text-[11px] leading-4 text-gray-500">
+              <p className="mt-6 sm:mt-10 max-w-[700px] text-[11px] leading-4 text-gray-500">
                 Investment in securities market are subject to market risks,
                 read all the related documents carefully before investing.
                 The securities are quoted as an example and not as a
@@ -78,9 +77,7 @@ export default function BoxSection2() {
             </div>
 
             {/* RIGHT CONTENT */}
-            <div className="relative min-h-[800px] flex items-center justify-end">
-
-              {/* Phone Image */}
+            <div className="hidden lg:flex relative min-h-[800px] items-center justify-end">
               <Image
                 src="/images/hero5.png"
                 alt="Phone"
@@ -98,9 +95,6 @@ export default function BoxSection2() {
                   object-contain
                 "
               />
-
-     
-
             </div>
 
           </div>

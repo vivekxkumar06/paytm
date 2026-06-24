@@ -24,7 +24,7 @@ export default function Home() {
     <BoxSection />
     <BoxSection2 />
     <BoxSection3/>
-    <PaytmFooter />
+    {/* <PaytmFooter /> */}
     </>
  
   );

@@ -1,15 +1,16 @@
 import HeroCard from "./HeroCard";
 
-
 export default function HeroSection() {
   return (
-    <section className="bg-[#f5f7fa] py-8 text-black mt-20">
-      <div className="max-w-[1400px] mx-auto flex gap-6">
+    <section className="bg-[#f5f7fa] py-6 text-black mt-20">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 flex flex-col lg:flex-row gap-6">
         
-       
-<HeroCard/>
-        {/* Right Ad Banner */}
-        <div className="w-[380px] shrink-0">
+        <div className="flex-1">
+          <HeroCard />
+        </div>
+
+        {/* Right Ad Banner – hidden on mobile */}
+        <div className="hidden lg:block w-[380px] shrink-0">
           <img
             src="/images/hero.png"
             alt="Advertisement"
