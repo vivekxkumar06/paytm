@@ -67,7 +67,7 @@ export default function Navbar() {
       {menuOpen && (
         <div className="lg:hidden bg-white border-t shadow-lg px-6 py-4 flex flex-col gap-4">
           <Link
-            href="/recharge-bills"
+            href="/#"
             className="font-semibold text-[15px] py-2 border-b border-gray-100"
             onClick={() => setMenuOpen(false)}
           >
@@ -81,14 +81,14 @@ export default function Navbar() {
             Ticket Booking
           </Link>
           <Link
-            href="/payments"
+            href="/#"
             className="font-semibold text-[15px] py-2 border-b border-gray-100"
             onClick={() => setMenuOpen(false)}
           >
             Payments & Services
           </Link>
           <Link
-            href="/business"
+            href="/#"
             className="font-semibold text-[15px] py-2 border-b border-gray-100"
             onClick={() => setMenuOpen(false)}
           >
@@ -102,7 +102,7 @@ export default function Navbar() {
             Company
           </Link>
           <Link
-            href="/download"
+            href="/#"
             className="flex items-center gap-2 font-semibold text-[15px] text-[#002970]"
             onClick={() => setMenuOpen(false)}
           >
