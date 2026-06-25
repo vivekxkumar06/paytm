@@ -12,13 +12,16 @@ export default function Navbar() {
       <div className="max-w-[1400px] mx-auto h-full px-4 sm:px-8 flex items-center justify-between">
 
         {/* Logo */}
-        <div className="shrink-0">
-          <img
+        <Link href= "/"
+        className="shrink-0"
+        >
+  <img
             src="/images/paytm.png"
             alt="Paytm"
             className="w-[130px] sm:w-[180px] object-contain"
           />
-        </div>
+        </Link>
+       
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex">
@@ -26,14 +29,8 @@ export default function Navbar() {
         </div>
 
         {/* Right Side – Desktop */}
-        <div className="hidden lg:flex items-center gap-8">
-          <Link
-            href="/download"
-            className="flex items-center gap-2 font-semibold text-[15px]"
-          >
-            <Download size={18} />
-            Download App
-          </Link>
+        {/* <div className="hidden lg:flex items-center gap-8">
+        
 
           <button className="flex items-center bg-[#002970] rounded-full pl-1 pr-5 py-1">
             <div className="w-10 h-10 rounded-full bg-[#00BAF2] flex items-center justify-center">
@@ -43,7 +40,7 @@ export default function Navbar() {
               Sign In
             </span>
           </button>
-        </div>
+        </div> */}
 
         {/* Mobile – Sign In + Hamburger */}
         <div className="flex lg:hidden items-center gap-3">

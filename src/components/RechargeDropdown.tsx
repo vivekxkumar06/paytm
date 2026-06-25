@@ -1,0 +1,82 @@
+"use client";
+
+import Link from "next/link";
+import {
+  ChevronDown,
+  Smartphone,
+  Zap,
+  Tv,
+  Building2,
+  Droplets,
+  Flame,
+  CreditCard,
+  ShieldCheck,
+  Receipt,
+} from "lucide-react";
+
+const rechargeItems = [
+  { label: "Mobile Recharge", icon: Smartphone },
+  { label: "Electricity Bill", icon: Zap },
+  { label: "DTH Recharge", icon: Tv },
+  { label: "Municipal Bill", icon: Building2 },
+  { label: "Water Bill", icon: Droplets },
+  { label: "Gas & Cylinder", icon: Flame },
+  { label: "Loan EMI", icon: CreditCard },
+  { label: "Insurance Premium", icon: ShieldCheck },
+  { label: "Challan", icon: Receipt },
+];
+
+export default function RechargeDropdown() {
+  return (
+    <div className="group relative">
+      {/* Trigger */}
+      <div    className="flex items-center gap-1 py-8 font-semibold text-[15px]">
+            Recharge & Bills
+
+        <ChevronDown
+          size={15}
+          className="transition-transform duration-200 group-hover:rotate-180"
+        />
+
+      </div>
+    
+
+      {/* Dropdown */}
+      <div className="invisible absolute left-1/2 top-full z-50 w-[320px] -translate-x-1/2 opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
+        
+        {/* Arrow */}
+        <div className="absolute -top-2 left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 border-l border-t border-gray-200 bg-white" />
+
+        <div className="overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-[0_20px_50px_rgba(0,0,0,0.15)]">
+          {rechargeItems.map((item, index) => {
+            const Icon = item.icon;
+
+            return (
+              <div key={item.label}>
+                <Link
+                  href="/"
+                  className="flex items-center gap-4  px-6 py-2 hover:bg-[#f5f9ff]"
+                >
+                  <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f1f8ff]">
+                    <Icon
+                      size={18}
+                      className="text-[#00BAF2]"
+                    />
+                  </div>
+
+                  <span className="text-[15px] font-semibold text-black">
+                    {item.label}
+                  </span>
+                </Link>
+
+                {/* {index === 5 && (
+                  <div className="mx-5 border-t border-gray-100" />
+                )} */}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
