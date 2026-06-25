@@ -12,7 +12,7 @@ export default function Navbar() {
       <div className="max-w-[1400px] mx-auto h-full px-4 sm:px-8 flex items-center justify-between">
 
         {/* Logo */}
-        <Link href= "/"
+        <Link href= "/#"
         className="shrink-0"
         >
   <img
