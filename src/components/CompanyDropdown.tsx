@@ -18,7 +18,7 @@ export default function CompanyDropdown() {
     <div className="group relative">
       {/* Trigger */}
       <div
-        href="/company"
+        
         className="flex items-center gap-1 py-8 font-semibold text-[15px]"
       >
         Company
