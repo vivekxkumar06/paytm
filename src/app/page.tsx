@@ -9,7 +9,6 @@ import CardSection from "../components/CardSection";
 import BoxSection from "../components/BoxSection";
 import BoxSection2 from "../components/BoxSection2";
 import BoxSection3 from "../components/BoxSection3";
-import PaytmFooter from "../components/PaytmFooter";
 
 export default function Home() {
   return (
@@ -24,7 +23,7 @@ export default function Home() {
     <BoxSection />
     <BoxSection2 />
     <BoxSection3/>
-    {/* <PaytmFooter /> */}
+    
     </>
  
   );
