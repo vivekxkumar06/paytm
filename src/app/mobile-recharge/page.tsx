@@ -37,7 +37,7 @@ const operators = [
   },
   {
     name: "BSNL",
-    image: "/images/BSNL.png",
+    image: "/images/bsnl.png",
   },
   {
     name: "Jio",
@@ -45,7 +45,7 @@ const operators = [
   },
   {
     name: "MTNL",
-    image: "/images/MTNL.png",
+    image: "/images/mtnl.png",
   },
   {
     name: "VI",

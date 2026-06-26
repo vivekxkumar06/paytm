@@ -3,13 +3,13 @@ import { ArrowRight } from "lucide-react";
 
 const boxItems = [
   {
-    logo: "/images/Credit.png",
+    logo: "/images/credit.png",
     title1: "One destination for",
     title2: "Credit Cards",
     description:
       "Paytm HDFC, SBI Card & Axis Bank Credit Card with assured Cashback and incredible offers.",
     button: "Apply Now",
-    image: "/images/Atm.png",
+    image: "/images/atm.png",
     bg: "bg-[#F1F7FD]",
     logos: [
       "/images/sbi.png",
@@ -18,7 +18,7 @@ const boxItems = [
     ],
   },
   {
-    logo: "/images/Paytm2.png",
+    logo: "/images/paytm2.png",
     title1: "Insurance ka",
     title2: "Super Market",
     description:

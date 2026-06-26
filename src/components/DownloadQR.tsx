@@ -26,7 +26,7 @@ export default function DownloadQR() {
 
           <div className="mt-4 flex justify-center">
             <Image
-              src="/images/Q-code.png"
+              src="/images/q-code.png"
               alt="QR Code"
               width={170}
               height={170}

@@ -102,7 +102,7 @@ export default function SignInModal() {
                     </div>
                   ) : (
                     <Image
-                      src="/images/Q-code.png"
+                      src="/images/q-code.png"
                       alt="QR Code"
                       width={220}
                       height={220}
