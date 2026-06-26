@@ -14,6 +14,12 @@ const services = [
     title: "Mobile Recharge",
     href: "/mobile-recharge",
   },
+    {
+    icon: Lightbulb,
+    title: "Electricity Bill",
+    href: "/Electricity-bill",
+    active: true,
+  },
   {
     icon: SatelliteDish,
     title: "DTH Recharge",
@@ -24,12 +30,7 @@ const services = [
     title: "FastTag Recharge",
     href: "/fastag-recharge",
   },
-  {
-    icon: Lightbulb,
-    title: "Electricity Bill",
-    href: "/electricity-bill",
-    active: true,
-  },
+
   {
     icon: CreditCard,
     title: "Loan EMI Payment",

@@ -592,7 +592,7 @@ export default function PaytmFooter() {
 
         {/* Bottom bar */}
         <div className="mt-8 pt-6 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-gray-400">© 2025 Paytm</p>
+          <p className="text-sm text-gray-400">© 2026 Paytm</p>
           <div className="flex items-center gap-3">
             <span className="text-sm text-gray-500 mr-1">Follow Us</span>
             {[
