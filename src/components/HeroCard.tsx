@@ -20,21 +20,22 @@ const services = [
     href: "/Electricity-bill",
     active: true,
   },
-  {
-    icon: SatelliteDish,
-    title: "DTH Recharge",
-    href: "/dth-recharge",
-  },
-  {
+   {
     icon: Car,
     title: "FastTag Recharge",
     href: "/fastag-recharge",
   },
+  {
+    icon: SatelliteDish,
+    title: "DTH Recharge",
+    href: "/DTH-recharge",
+  },
+ 
 
   {
     icon: CreditCard,
-    title: "Loan EMI Payment",
-    href: "/loan-emi",
+    title: "Insurance Premium",
+    href: "/Insurance",
   },
   {
     icon: Grid2x2,
