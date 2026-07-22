@@ -8,14 +8,14 @@ export default function RechargeOffers() {
       title: "Do Mobile Recharge and Win ₹100",
       subtitle: "cashback. Promo: TAKEITALL",
       button: "Recharge Now",
-      href: "/Recharge Now",
+      href: "/Recharge",
     },
     {
       icon: <Wifi size={28} className="text-blue-600" />,
       title: "Broadband Recharge",
       subtitle: "Bill due? Pay now & get rewarded",
       button: "Pay Now",
-      href: "/Pay Now",
+      href: "/Pay",
     },
   ];
 

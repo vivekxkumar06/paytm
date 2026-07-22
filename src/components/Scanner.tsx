@@ -30,7 +30,7 @@ export default function FeaturesSection() {
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
           {scanItems.map((item, index) => (
             <Link
-              href="/download"
+              href="/Download"
               key={index}
               className={`${item.bg} relative overflow-hidden rounded-[22px] h-[205px] p-7 transition-all duration-300 hover:-translate-y-1`}
             >

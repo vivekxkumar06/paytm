@@ -20,12 +20,12 @@ const items = [
   {
     icon: <Train size={24} />,
     title: "Trains",
-    href: "/train",
+    href: "/Train",
   },
   {
     icon: <PlaneTakeoff size={24} />,
     title: "Intl. Flights",
-    href: "/intl-flight",
+    href: "/Intl-flight",
   },
 ];
 
