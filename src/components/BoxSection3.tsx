@@ -64,12 +64,14 @@ export default function BoxSection3() {
                 priority
                 className="
                   absolute
-                  right-[-80px]
+                  right-[-40px]
+                  xl:right-[-80px]
                   top-1/2
                   -translate-y-1/2
                   z-10
                   h-auto
-                  w-[650px]
+                  w-[520px]
+                  xl:w-[650px]
                   object-contain
                 "
               />

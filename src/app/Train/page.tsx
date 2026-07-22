@@ -110,7 +110,7 @@ const FAQS = [
   },
 ];
 
-function ClassPill({ active, children, onClick }) {
+function ClassPill({ active, children, onClick }: { active: boolean; children: React.ReactNode; onClick: () => void }) {
   return (
     <button
       onClick={onClick}

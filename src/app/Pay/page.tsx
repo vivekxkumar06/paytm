@@ -62,13 +62,13 @@ const AVATAR_COLORS = [
   "bg-indigo-100 text-indigo-700",
 ];
 
-function colorFor(name) {
+function colorFor(name: string) {
   let hash = 0;
   for (let i = 0; i < name.length; i++) hash = name.charCodeAt(i) + ((hash << 5) - hash);
   return AVATAR_COLORS[Math.abs(hash) % AVATAR_COLORS.length];
 }
 
-function initialsFor(name) {
+function initialsFor(name: string) {
   const clean = name.replace(/\(.*?\)/g, "").trim();
   const parts = clean.split(" ").filter(Boolean);
   if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();

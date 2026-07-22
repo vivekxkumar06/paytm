@@ -151,7 +151,7 @@ const FAQS = [
   { q: "Can I pay later for my booked flight tickets?", a: "No, currently we do not offer this service. The complete amount has to be paid while booking the flight tickets." },
 ];
 
-function RouteRow({ text }) {
+function RouteRow({ text }: { text: string }) {
   return (
     <div className="flex items-center justify-between border-b border-dashed border-gray-100 py-3.5 last:border-none">
       <p className="text-sm text-gray-800">{text}</p>
@@ -162,7 +162,7 @@ function RouteRow({ text }) {
   );
 }
 
-function NumberedBlock({ n, title, text }) {
+function NumberedBlock({ n, title, text }: { n: number; title: string; text: string }) {
   return (
     <div className="py-3">
       <p className="mb-1 text-sm font-bold text-gray-900">
@@ -173,7 +173,7 @@ function NumberedBlock({ n, title, text }) {
   );
 }
 
-function InfoCard({ heading, children }) {
+function InfoCard({ heading, children }: { heading: string; children: React.ReactNode }) {
   return (
     <div className="rounded-2xl border border-gray-100 p-6 sm:p-8">
       <h2 className="mb-4 text-lg font-extrabold text-gray-900 sm:text-xl">{heading}</h2>
@@ -185,7 +185,7 @@ function InfoCard({ heading, children }) {
 export default function FlightBookingPage() {
   const [tripType, setTripType] = useState("one-way");
   const [nonStop, setNonStop] = useState(false);
-  const [specialFare, setSpecialFare] = useState(null);
+  const [specialFare, setSpecialFare] = useState<string | null>(null);
   const [from, setFrom] = useState("Delhi (DEL)");
   const [to, setTo] = useState("Mumbai (BOM)");
 
